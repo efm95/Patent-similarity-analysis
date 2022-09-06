@@ -34,8 +34,7 @@ if __name__ == '__main__':
     
     #Store embeddings
     with open('embeddings.pkl', "wb") as fOut:
-        pickle.dump({'patnum':df['patnum'].to_numpy(),
-                     'embeddings': emb}, fOut, protocol=pickle.HIGHEST_PROTOCOL)
+        pickle.dump({'embeddings': emb}, fOut, protocol=pickle.HIGHEST_PROTOCOL)
     
     stop = timeit.default_timer()
     print('Time: ', stop - start) 
