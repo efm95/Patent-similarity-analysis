@@ -1,10 +1,6 @@
 import pandas as pd 
 import vaex as vx
 
-
-
-
-
 grant = pd.read_csv('grant_grant.csv')
 grant = vx.from_pandas(grant)
 grant.export('grant_grant.hdf5',progress=True)
