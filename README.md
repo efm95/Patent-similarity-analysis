@@ -13,7 +13,7 @@ The data were downloaded from the [USPTO buldkata respoitory](https://bulkdata.u
 
 All the effects and data treatment have been carried out using different `py`scripts. To obtain the same sample with the same covariates, follow the steps marked by the related `py`script: 
 
-1. `hdf5_conversion.py`: to process the data, we used the [`vaex`](https://vaex.io/docs/index.html#) libary, hence, we first converted `csv` files into `hdf5`. 
+1. `hdf5_conversion.py`: to process the data, we used the [vaex](https://vaex.io/docs/index.html#) libary, hence, we first converted `csv` files into `hdf5`. 
 2. `embeddings_computation.py`: positional embeddings have been computed using a pre-traiend SBERT model from the [Sentence-Transformers](https://www.sbert.net/) library from the abstract in the `grant_grant` file.
 
 3. `similarity_computation.py`: once embeddings have been computed, we proceed by applying the parallelized loop to compute similarity scores for each combination of citing-cited patent in the `grant_cite` file. 
@@ -24,4 +24,5 @@ All the effects and data treatment have been carried out using different `py`scr
 
 ## Analysis
 
-Once the preprocessing phase is done, it is possible to reproduce the analysis through the R script `analysis.R`.
+Once the preprocessing phase is done, it is possible to reproduce the analysis through the R script `analysis.R`. This consists of 4 GAMs specifications: 
+- *Model 0*: similarity  = $\beta_0$+s(publication date)
