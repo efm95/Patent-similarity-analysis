@@ -1,5 +1,7 @@
 # Patent-similarity-analysis
-Patent citation analysis from the paper "Drivers of the decrease of patent similarities from 1976 to 2021"
+
+This repository contains the codes used for the analysis from the paper "Drivers of the decrease of patent similarities from 1976 to 2021" [I'm an inline-style link](https://arxiv.org/abs/2212.06046)
+
 
 To replicate the analysis provided by the paper, the following steps must be executed:
 1. download the data through https://github.com/efm95/patents
