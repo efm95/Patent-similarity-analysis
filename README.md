@@ -26,11 +26,12 @@ All the effects and data treatment have been carried out using different `py`scr
 
 Once the preprocessing phase is done, it is possible to reproduce the analysis through the R script `analysis.R`. This consists of 4 GAMs specifications: 
 
-- *Model 0*: similarity = `s(`publication date`)`
-- *Model 1*: similarity = s(publication date) + s(time lag beteween citing and cited publication date in days)
+- *Model 0*: similarity = `s(publication date)`
 
-- *Model 2*: similarity = s(publication date) + s(time lag beteween citing and cited publication date in days) + s(sender citation count in log) + is the same organization?(binary) + is the sender owner an organization?(binary) + is the receiver owner an organization? (binary) 
+- *Model 1*: similarity = `s(publication date)` + `s(time lag beteween citing and cited publication date in days)`
 
-- *Model 3*: similarity = s(publication date) + s(time lag beteween citing and cited publication date in days) + s(sender citation count in log) + is the same organization?(binary) + is the sender owner an organization?(binary) + is the receiver owner an organization?(binary) + jaccard sim for IPC section (continuous) + jaccard sim for IPC class (continuous) + jaccard sim for IPC sub-class (continuous) + jaccard sim for IPC group (continuous) + jacard sim for IPC subgroup (continuous)
+- *Model 2*: similarity = `s(publication date)` + `s(time lag beteween citing and cited publication date in days)` + `s(sender citation count in log)` + `is the same organization?(binary)` + `is the sender owner an organization?(binary) + is the receiver owner an organization? (binary)`
+
+- *Model 3*: similarity = `s(publication date)` + `s(time lag beteween citing and cited publication date in days)` + `s(sender citation count in log) + is the same organization?(binary) + is the sender owner an organization?(binary) + is the receiver owner an organization?(binary) + jaccard sim for IPC section (continuous) + jaccard sim for IPC class (continuous) + jaccard sim for IPC sub-class (continuous) + jaccard sim for IPC group (continuous) + jacard sim for IPC subgroup (continuous)
 
 where  `s(...)` indicates a smooth term. 
