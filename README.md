@@ -24,7 +24,7 @@ All the effects and data treatment have been carried out using different `py`scr
 
 ## Analysis
 
-Once the preprocessing phase is done, it is possible to reproduce the analysis through the R script `analysis.R`. This consists of 4 GAMs specifications: 
+Once the preprocessing phase is done, it is possible to reproduce the analysis through the R script `analysis.R`. This consists of 4 GAMs specifications esitmated through the `gam`function in the [`mgcv`](https://cran.r-project.org/web/packages/mgcv/mgcv.pdf) package: 
 
 - *Model 0*: similarity = `s(sender publication date)`
 
