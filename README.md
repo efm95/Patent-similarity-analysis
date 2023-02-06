@@ -5,6 +5,8 @@ This repository contains the codes used for the analysis from the paper [Drivers
 ## Abstract 
 The citation network of patents citing prior art arises from the legal obligation of patent applicants to properly disclose their invention. One way to study the relationship between current patents and their antecedents is by analyzing the similarity between the textual elements of patents. Many patent similarity indicators have shown a constant decrease since the mid-70s. Although several explanations have been proposed, more comprehensive analyses of this phenomenon have been rare. In this paper, we use a computationally efficient measure of patent similarity scores that leverages state-of-the-art Natural Language Processing tools, to investigate potential drivers of this apparent similarity decrease. This is achieved by modeling patent similarity scores by means of general additive models. We found that non-linear modeling specifications are able to distinguish between distinct, temporally varying drivers of the patent similarity levels that explain more variation in the data (R2~18%) compared to previous methods. Moreover, the model reveals an underlying trend in similarity scores that is fundamentally different from the one presented in previously. Data
 
+## Data 
+
 The data were downloaded from the [USPTO buldkata respoitory](https://bulkdata.uspto.gov/) using the following [library](https://github.com/efm95/patents). The dataset used for this analysis have been upploaded on [Kaggle link](https://www.kaggle.com/datasets/filippimazz/patents-citations).
 
 ## Effects and data pre-processing
