@@ -55,7 +55,7 @@ sim = TexSim(df=cit,
              emb_matrix=emb)
 
 cit['index'] = vx.vrange(0,len(cit))
-cit = cit.join(sim,how='inner',on='index',allow_duplications=True)
+cit = cit.join(sim,how='inner',on='index',allow_duplication=True)
 cit.drop(['index','senderPos','receiverPos'],inplace=True)
 
-cit.extract('citation_with_similarity.hdf5',progress=True)
+cit.export('citation_with_similarity.hdf5',progress=True)
